@@ -2,7 +2,7 @@
 patternName='^[A-Z][A-Za-z]{2,}'
 patternEmail='^[A-Za-z0-9]+([.+-][A-Za-z0-9]{3,})*@[A-Za-z0-9]+\.[a-z]{2,}([.][A-Za-z0-9]{2,})*$'
 patternNo='^[0-9]{2}\s[0-9]{10}$'
-patternPass='([A-Za-z0-9+.&%*$#]){8,}'
+patternPass='[A-Z][A-Za-z0-9]{7,}'
 read -p "enter the first name and last name to validate" Firstname Lastname
 [[ $Firstname =~ $patternName ]] && { echo "valid first name";} || { echo "invalid first name";}
 [[ $Lastname =~ $patternName ]] && { echo "valid last name";} || { echo "invalid last name";}
